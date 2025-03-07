@@ -9,8 +9,7 @@ function StackedCircularFooter() {
           {/* Company Info */}
           <div className="flex flex-col items-center text-center md:items-start md:text-left">
             <div className="flex items-center gap-2 mb-4">
-              <span className="text-2xl font-bold text-primary">ABC</span>
-              <span className="text-xl font-bold text-secondary">Consulting</span>
+              <img src="/logo.png" alt="ABC Consulting" width={84} height={52} />
             </div>
             <p className="text-gray-600 mb-6 max-w-md">
               Helping beauty professionals obtain their licenses efficiently and start their legitimate business journey with comprehensive support services.
