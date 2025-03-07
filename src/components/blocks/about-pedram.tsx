@@ -101,7 +101,7 @@ export function AboutPedram() {
         transition={{
           duration: 0.6,
         }}
-        className="z-50 flex flex-col justify-center items-center max-w-4xl mx-auto px-4 py-8 md:py-0"
+        className="z-40 flex flex-col justify-center items-center max-w-4xl mx-auto px-4 py-8 md:py-0"
       >
         <motion.h2 
           className="font-bold text-2xl sm:text-3xl md:text-5xl text-center text-gray-800 py-2 md:py-4"
