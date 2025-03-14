@@ -1,15 +1,27 @@
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-rgb: 255, 255, 255;
+  --beige: #D2B589;
+  --beige-light: #E0CCAA;
+  --beige-dark: #B89B6D;
+  --blue: #004EA4;
+  --blue-light: #0062CC;
+  --blue-dark: #003B7D;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
+}
+
+@layer base {
+  html {
+    font-family: var(--font-vazir), 'Vazir', system-ui, sans-serif;
+  }
 }
 
 @layer components {
@@ -22,6 +34,24 @@ body {
   .scroll-smooth {
     scroll-behavior: smooth;
   }
+}
+
+/* Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--beige);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--beige-light);
 }
 
 /* Custom animations */
@@ -38,4 +68,15 @@ body {
 
 .animate-fadeIn {
   animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Custom gradients */
+.bg-brand-gradient {
+  background: linear-gradient(135deg, var(--beige) 0%, var(--blue) 100%);
+}
+
+.text-brand-gradient {
+  background: linear-gradient(135deg, var(--beige) 0%, var(--blue-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

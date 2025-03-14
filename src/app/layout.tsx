@@ -1,16 +1,26 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import './globals.css'
+import localFont from 'next/font/local'
 
-const inter = Inter({ subsets: ["latin"] });
+const vazir = localFont({
+  src: [
+    {
+      path: '../fonts/Vazir.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/Vazir-Bold.woff2',
+      weight: '700',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-vazir'
+})
 
-export const metadata: Metadata = {
-  title: "ABC Consulting - Beauty Professional Licensing & Business Services",
-  description: "Expert assistance in obtaining beauty licenses and setting up successful beauty businesses in the USA. Over 20 years of industry experience.",
-  icons: {
-    icon: './signature.svg'
-  }
-};
+export const metadata = {
+  title: 'ABC Consulting',
+  description: 'مشاوره تخصصی سالن‌های زیبایی',
+}
 
 export default function RootLayout({
   children,
@@ -18,10 +28,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="h-full">
-      <body className={`${inter.className} min-h-full bg-white`}>
-        {children}
-      </body>
+    <html lang="fa" dir="rtl" className={`${vazir.variable}`}>
+      <body>{children}</body>
     </html>
-  );
+  )
 }
