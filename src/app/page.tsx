@@ -248,34 +248,36 @@ export default function Home() {
             </div>
             
             {/* License Services Image Showcase */}
-            <div className="mt-8 md:mt-16 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-              <div className="relative h-48 md:h-64 rounded-2xl overflow-hidden group">
-                <Image
-                  src="/testimonials/1.png"
-                  alt="License Service 1"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-brand-blue/20 group-hover:bg-brand-blue/10 transition-colors duration-300" />
-              </div>
-              <div className="relative h-48 md:h-64 rounded-2xl overflow-hidden group">
-                <Image
-                  src="/testimonials/2.png"
-                  alt="License Service 2"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-brand-blue/20 group-hover:bg-brand-blue/10 transition-colors duration-300" />
-              </div>
-              <div className="relative h-48 md:h-64 rounded-2xl overflow-hidden group">
-                <Image
-                  src="/testimonials/3.jpg"
-                  alt="License Service 3"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-brand-blue/20 group-hover:bg-brand-blue/10 transition-colors duration-300" />
-              </div>
+            <div className="mt-8 md:mt-16 grid grid-cols-3 gap-4 md:gap-6">
+              {[
+                { src: "/testimonials/1.png", alt: "License Service 1" },
+                { src: "/testimonials/2.png", alt: "License Service 2" },
+                { src: "/testimonials/3.jpg", alt: "License Service 3" },
+                { src: "/testimonials/4.jpg", alt: "License Service 4" },
+                { src: "/testimonials/5.jpg", alt: "License Service 5" },
+                { src: "/testimonials/6.jpg", alt: "License Service 6" }
+              ].map((image, index) => (
+                <div key={index} className="relative h-32 sm:h-48 md:h-64 rounded-2xl overflow-hidden group cursor-pointer"
+                     onClick={() => {
+                       const modal = document.createElement('div');
+                       modal.className = 'fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4';
+                       modal.onclick = () => modal.remove();
+                       const img = document.createElement('img');
+                       img.src = image.src;
+                       img.alt = image.alt;
+                       img.className = 'max-h-[90vh] max-w-[90vw] object-contain rounded-lg';
+                       modal.appendChild(img);
+                       document.body.appendChild(modal);
+                     }}>
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-brand-blue/10 group-hover:bg-transparent transition-colors duration-300" />
+                </div>
+              ))}
             </div>
           </div>
           
