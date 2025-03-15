@@ -99,7 +99,7 @@ export default function Home() {
             </div>
             <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
               <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 md:mb-10 text-brand-gradient">
-                درباره من
+                درباره ما
               </h2>
               <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed mb-4 md:mb-10">
                 سلام، من پدرام هستم. بیش از 6 سال است که در حوزه زیبایی در کشورهای مختلف فعالیت دارم. در این مدت، به مراکز مختلف کمک کرده‌ام تا در زمینه بازاریابی، هدف‌گذاری، طراحی، مدیریت و راه‌اندازی سالن‌های زیبایی به موفقیت برسند.
