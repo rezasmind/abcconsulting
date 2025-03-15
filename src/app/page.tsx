@@ -447,8 +447,15 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center max-w-4xl mx-auto backdrop-blur-sm bg-brand-blue-dark/10 p-6 md:p-10 rounded-3xl border border-brand-beige/10 shadow-[0_0_30px_rgba(0,0,0,0.2)]">
             {/* Improved icon presentation */}
-            <div className="inline-block p-3 md:p-4 rounded-full bg-brand-blue-light/20 mb-4 md:mb-8 backdrop-blur-sm border border-brand-beige/20">
-              <Flag className="h-8 w-8 md:h-14 md:w-14 text-brand-beige animate-pulse" />
+            <div className="inline-block rounded-full bg-brand-blue-light/20 mb-4 md:mb-8 backdrop-blur-sm border border-brand-beige/20">
+              <div className="relative h-24 w-24 md:h-44 md:w-44">
+                <Image
+                  src="/goal.jpg"
+                  alt="هدف ما"
+                  fill
+                  className="object-cover rounded-full"
+                />
+              </div>
             </div>
             
             
