@@ -112,6 +112,66 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="py-10 md:py-36 bg-gradient-to-br from-brand-blue via-brand-blue-dark to-brand-blue relative overflow-hidden">
+        {/* Enhanced background elements */}
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-blue-light/20 via-transparent to-brand-blue-dark/30 opacity-30 animate-slow-pulse" />
+        <div className="absolute inset-0">
+          <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+                <circle cx="10" cy="10" r="1.5" fill="currentColor" className="text-brand-beige/20" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#dots)" />
+          </svg>
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-beige/10 via-transparent to-brand-beige/10" />
+        
+        {/* Decorative floating elements */}
+        <div className="absolute top-20 left-20 w-64 h-64 rounded-full bg-brand-beige/5 blur-xl"></div>
+        <div className="absolute bottom-20 right-20 w-80 h-80 rounded-full bg-brand-beige/5 blur-xl"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="text-center max-w-4xl mx-auto backdrop-blur-sm bg-brand-blue-dark/10 p-6 md:p-10 rounded-3xl border border-brand-beige/10 shadow-[0_0_30px_rgba(0,0,0,0.2)]">
+            {/* Improved icon presentation */}
+            <div className="inline-block rounded-full bg-brand-blue-light/20 mb-4 md:mb-8 backdrop-blur-sm border border-brand-beige/20">
+              <div className="relative h-24 w-24 md:h-44 md:w-44">
+                <Image
+                  src="/goal.jpg"
+                  alt="هدف ما"
+                  fill
+                  className="object-cover rounded-full"
+                />
+              </div>
+            </div>
+            
+            
+            {/* Content with improved readability */}
+            <div className="space-y-3 md:space-y-6">
+              <p className="text-lg md:text-2xl font-bold leading-relaxed text-white">
+                هدف ما این است که به هم‌زبانان عزیز و مشتریانمان کمک کنیم تا کسب و کار خود را به صورت قانونی و هدفمند پیش ببرند.
+              </p>
+              
+              <p className="text-xs md:text-xl leading-relaxed text-white/90">
+                با توجه به این که بسیاری از سالن‌ها بدون داشتن  لایسنس مشغول به فعالیت هستند و مدارک کامل ندارند، ما اینجا هستیم تا به آنها کمک کنیم تا به صورت قانونی و حرفه‌ای به کسب و کار خود ادامه دهند.
+              </p>
+            </div>
+            
+            {/* Call-to-action button */}
+            <div className="mt-6 md:mt-10">
+              <button className="group relative inline-flex items-center gap-2 md:gap-3 bg-brand-beige text-brand-blue px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-bold hover:bg-brand-beige-light transition-all duration-300 overflow-hidden shadow-[0_0_15px_rgba(210,181,137,0.3)] hover:shadow-[0_0_25px_rgba(210,181,137,0.5)]">
+                <span className="relative z-10 transition-transform group-hover:-translate-x-2">
+                  <Link href="https://ig.me/m/abcconsulting.co" target="_blank" rel="noopener noreferrer">
+                    بیشتر بدانید
+                  </Link>
+                </span>
+                <ArrowLeft className="h-4 w-4 md:h-5 md:w-5 relative z-10 transition-transform group-hover:translate-x-1" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section with Enhanced Cards */}
       <section className="py-10 md:py-36 bg-white relative">
         <div className="absolute inset-0 bg-[url('/pattern.png')] opacity-5" />
@@ -293,7 +353,7 @@ export default function Home() {
             
             {/* Salon Setup Image Showcase */}
             <div className="mt-8 md:mt-16 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-              <div className="relative h-48 md:h-64 rounded-2xl overflow-hidden group col-span-2">
+              <div className="relative h-48 md:h-64 rounded-2xl overflow-hidden group col-span-2 md:col-span-3">
                 <Image
                   src="/salon1.jpg"
                   alt="Salon Setup 1"
@@ -425,65 +485,7 @@ export default function Home() {
       </section>
 
       {/* Mission Section with Enhanced Gradient */}
-      <section className="py-10 md:py-36 bg-gradient-to-br from-brand-blue via-brand-blue-dark to-brand-blue relative overflow-hidden">
-        {/* Enhanced background elements */}
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-blue-light/20 via-transparent to-brand-blue-dark/30 opacity-30 animate-slow-pulse" />
-        <div className="absolute inset-0">
-          <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
-                <circle cx="10" cy="10" r="1.5" fill="currentColor" className="text-brand-beige/20" />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#dots)" />
-          </svg>
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-beige/10 via-transparent to-brand-beige/10" />
-        
-        {/* Decorative floating elements */}
-        <div className="absolute top-20 left-20 w-64 h-64 rounded-full bg-brand-beige/5 blur-xl"></div>
-        <div className="absolute bottom-20 right-20 w-80 h-80 rounded-full bg-brand-beige/5 blur-xl"></div>
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="text-center max-w-4xl mx-auto backdrop-blur-sm bg-brand-blue-dark/10 p-6 md:p-10 rounded-3xl border border-brand-beige/10 shadow-[0_0_30px_rgba(0,0,0,0.2)]">
-            {/* Improved icon presentation */}
-            <div className="inline-block rounded-full bg-brand-blue-light/20 mb-4 md:mb-8 backdrop-blur-sm border border-brand-beige/20">
-              <div className="relative h-24 w-24 md:h-44 md:w-44">
-                <Image
-                  src="/goal.jpg"
-                  alt="هدف ما"
-                  fill
-                  className="object-cover rounded-full"
-                />
-              </div>
-            </div>
-            
-            
-            {/* Content with improved readability */}
-            <div className="space-y-3 md:space-y-6">
-              <p className="text-lg md:text-2xl font-bold leading-relaxed text-white">
-                هدف ما این است که به هم‌زبانان عزیز و مشتریانمان کمک کنیم تا کسب و کار خود را به صورت قانونی و هدفمند پیش ببرند.
-              </p>
-              
-              <p className="text-xs md:text-xl leading-relaxed text-white/90">
-                با توجه به این که بسیاری از سالن‌ها بدون داشتن  لایسنس مشغول به فعالیت هستند و مدارک کامل ندارند، ما اینجا هستیم تا به آنها کمک کنیم تا به صورت قانونی و حرفه‌ای به کسب و کار خود ادامه دهند.
-              </p>
-            </div>
-            
-            {/* Call-to-action button */}
-            <div className="mt-6 md:mt-10">
-              <button className="group relative inline-flex items-center gap-2 md:gap-3 bg-brand-beige text-brand-blue px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-bold hover:bg-brand-beige-light transition-all duration-300 overflow-hidden shadow-[0_0_15px_rgba(210,181,137,0.3)] hover:shadow-[0_0_25px_rgba(210,181,137,0.5)]">
-                <span className="relative z-10 transition-transform group-hover:-translate-x-2">
-                  <Link href="https://ig.me/m/abcconsulting.co" target="_blank" rel="noopener noreferrer">
-                    بیشتر بدانید
-                  </Link>
-                </span>
-                <ArrowLeft className="h-4 w-4 md:h-5 md:w-5 relative z-10 transition-transform group-hover:translate-x-1" />
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Stats Section with Enhanced Hover Effects */}
       <section className="py-10 md:py-32 bg-white relative overflow-hidden">
