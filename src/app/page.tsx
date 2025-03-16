@@ -23,7 +23,7 @@ export default function Home() {
         />
         
         {/* Overlay with better contrast for readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-beige/80 via-brand-beige/70 to-brand-beige/85" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-blue/80 via-brand-blue/70 to-brand-blue/85" />
         
         {/* Content container */}
         <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6">
@@ -57,7 +57,7 @@ export default function Home() {
               href="https://ig.me/m/abcconsulting.co" 
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative inline-flex items-center gap-2 sm:gap-3 bg-brand-blue text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-medium hover:bg-white hover:text-brand-blue transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="group relative inline-flex items-center gap-2 sm:gap-3 bg-brand-beige text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-medium hover:bg-white hover:text-brand-blue transition-all duration-300 shadow-lg hover:shadow-xl"
               aria-label="همین حالا مشاوره بگیرید - باز شدن در صفحه جدید"
             >
               <span className="relative z-10 transition-transform group-hover:-translate-x-1">
